@@ -1,6 +1,6 @@
 # XNAT Modules
 
-This project provides access to some XNAT v1.6 customisation modules.
+Some XNAT v1.6 customisation modules.
 
 To use:
  - clone this project, i.e. 'git clone https://github.com/mattsouth/xnat-modules'

@@ -2,11 +2,5 @@
 ## open <head> tag in htmlOpen.vm file
 </head>
 <body id="page_body" class="yui-skin-sam">
-  <div class="ribbon">
-  #if($siteConfig.getProperty("ribbon.url","")!="")
-    <a href="$siteConfig.getProperty("ribbon.url","")">$siteConfig.getProperty("ribbon.text","")</a>
-  #else
-    $siteConfig.getProperty("ribbon.text","")
-  #end
-  </div>
+  <div class="ribbon"><a href="$siteConfig.getProperty("ribbon.url","")">$siteConfig.getProperty("ribbon.text","")</a></div>
   <div id="page_wrapper">
