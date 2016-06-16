@@ -1,0 +1,6 @@
+{
+  "name": "XNAT-Modules",
+  "tagline": "Some XNAT 1.6 customisation modules",
+  "body": "# XNAT Modules\r\n\r\nSome XNAT v1.6 customisation modules.\r\n\r\nTo use (on linux or osx):\r\n - clone this project, i.e. ``git clone https://github.com/mattsouth/xnat-modules``\r\n - ``cd xnat-modules``\r\n - build module, i.e. ``./build.sh xnat-ribbon`` will create xnat-ribbon.jar\r\n - place the resulting jar file into your XNAT's modules folder and rebuild\r\n\r\n## XNAT Ribbon\r\n\r\nAdds a configurable ribbon to the top left hand corner of an XNAT installation.\r\n\r\n## TODO: XNAT Schema docs\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
