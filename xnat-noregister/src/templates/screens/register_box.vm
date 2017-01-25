@@ -1,0 +1,12 @@
+<!-- BEGIN templates/screens/register_box.vm -->
+
+<div id="register_form">
+
+<p>You can register via the <a href="$siteConfig.getProperty("noregister.register.url","")">$siteConfig.getProperty("noregister.directory.name","")</a></p>
+<p>Having done so, you'll be able to login here.</p>
+<hr style="margin: 2em 0" />
+<p><a href="$link.setPage("Login.vm")">Return to Login Page</a></p>
+
+</div>
+
+<!-- END templates/screens/register_box.vm -->

@@ -1,0 +1,16 @@
+#set ($template = $data.getTemplateInfo())
+$!template.setLayoutTemplate("Login.vm")
+#set ($siteId = $siteConfig.getProperty("siteId",""))
+$page.setTitle("$siteId - Register")
+
+<div id="login_area">
+    <div id="register_box_container" style="margin-right: 60px;">
+        <div id="register_box">
+          <form name="form2" class="friendlyForm" id="register_form">
+            <p>Did you forget your password? You can reset your password via the <a href="$siteConfig.getProperty("noregister.forgotlogin.url","")">$siteConfig.getProperty("noregister.directory.name","")</a></p>
+            <hr style="margin: 2em 0" />
+            <p><a href="$link.setPage("Login.vm")">Return to Login Page</a></p>
+          </form>
+        </div>
+    </div>
+</div>
