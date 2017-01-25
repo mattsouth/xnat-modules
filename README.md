@@ -21,7 +21,9 @@ building the module will allow you to customise it to your needs.
 ## XNAT Noregister
 
 This module overrides the user registration and forgotten password pages for when
-you've connected your XNAT instance to a read-only LDAP authentication source.
+you've connected your XNAT instance to a read-only authentication source.
 
-Changing the properties in xnat-noregister/src/conf/noregister-config.properties
-before building the module will allow you to customise it to your needs.
+Note that I havent used a conf file here because, for some
+reason, the $site.getProperty function doesnt work in the ForgotLogin template
+so you'll have to manually override the signup and forgoruserpassword action
+urls to customise this module.
