@@ -27,3 +27,9 @@ Note that I havent used a conf file here because, for some
 reason, the $site.getProperty function doesnt work in the ForgotLogin template
 so you'll have to manually override the signup and forgotuserpassword action
 urls to customise this module.
+
+## XNAT Upload-applet-fix
+
+A module to update the UploadApplet template in light of recent tweaks to the
+applet rules in firefox, as per this discussion group thread:
+[XNAT 1.7 problem uploading images JAVA plugin is not support](https://groups.google.com/forum/#!topic/xnat_discussion/JWEMwni55FM)
