@@ -1,6 +1,6 @@
 <style>
 .ribbon {
-  background-color: $siteConfig.getProperty("ribbon.background-color","");
+  background-color: $siteConfig.getProperty("ribbonBackgroundColor","");
   overflow: hidden;
   white-space: nowrap;
   /* top left corner */
@@ -20,8 +20,8 @@
   z-index:100;
 }
 .ribbon a {
-  border: 1px solid $siteConfig.getProperty("ribbon.border-color","");
-  color: $siteConfig.getProperty("ribbon.color","");
+  border: 1px solid $siteConfig.getProperty("ribbonBorderColor","");
+  color: $siteConfig.getProperty("ribbonColor","");
   display: block;
   font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 1px 0;
