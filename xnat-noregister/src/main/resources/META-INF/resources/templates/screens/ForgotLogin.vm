@@ -8,9 +8,7 @@ $page.setTitle("$siteId - Register")
         <div id="register_box">
           <form name="form2" class="friendlyForm" id="register_form">
             <p>Did you forget your password? You can reset your password via the
-              <a href="https://wiki.xnat.org/forgotuserpassword.action">
-                XNAT WIKI
-              </a>
+              <a href="$siteConfig.getProperty("noRegisterForgotPasswordURL","")">$siteConfig.getProperty("noRegisterTitle","")</a>
             </p>
             <hr style="margin: 2em 0" />
             <p><a href="$link.setPage("Login.vm")">Return to Login Page</a></p>

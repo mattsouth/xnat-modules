@@ -26,15 +26,23 @@ ribbonUrl=http://www.xnat.org
 ```
 If you change the config then you'll have to restart the application to see them applied.
 
-## TODO: XNAT Noregister
+## XNAT Noregister
 
 This module overrides the user registration and forgotten password pages for when
 you've connected your XNAT instance to a read-only authentication source.
 
-Note that I havent used a conf file here because, for some
-reason, the $site.getProperty function doesnt work in the ForgotLogin template
-so you'll have to manually override the signup and forgotuserpassword action
-urls to customise this module.
+The plugin assumes that your read-only authentication source has URLs for registration and forgotten password functionality and allows you to set those in the
+``$XNAT_HOME/config/prefs-init.ini`` file, which you should create if it doesnt already exist and add the following properties:
+```
+[siteConfig]
+
+noRegisterTitle=XNAT WIKI
+noRegisterRegistrationURL=http://wiki.xnat.org/signup.action
+noRegisterForgotPasswordURL=http://wiki.xnat.org/forgotuserpassword.action
+```
+
+Note that before this plugin can be used, this issue must be fixed: https://issues.xnat.org/browse/XNAT-4819
+Without this fix, the ForgotLogin page wont render properly.
 
 ## TODO: XNAT Upload-applet-fix
 
