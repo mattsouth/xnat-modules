@@ -12,7 +12,7 @@ To use (on linux or macos):
 
 Adds a configurable ribbon to the top left hand corner of an XNAT installation.
 
-![Screenshot of the default ribbon](https://mattsouth.github.io/xnat-modules/screenshot2.png | width=400)
+<img src="https://mattsouth.github.io/xnat-modules/screenshot2.png" width="600">
 
 The ribbon style and content is controlled by properties in the ``$XNAT_HOME/config/prefs-init.ini`` file, which you should create if it doesnt already exist and add the following properties:
 ```
