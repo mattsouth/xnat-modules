@@ -49,3 +49,11 @@ Note that before this plugin can be used, this issue must be fixed: https://issu
 A module to update the UploadApplet template in light of recent tweaks to the
 applet rules in firefox, as per this discussion group thread:
 [XNAT 1.7 problem uploading images JAVA plugin is not support](https://groups.google.com/forum/#!topic/xnat_discussion/JWEMwni55FM)
+
+### Before
+
+<img src="https://mattsouth.github.io/xnat-modules/screenshot3.png" width="600">
+
+### After
+
+<img src="https://mattsouth.github.io/xnat-modules/screenshot4.png" width="600">
