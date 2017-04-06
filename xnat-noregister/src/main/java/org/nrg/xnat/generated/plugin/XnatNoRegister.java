@@ -5,6 +5,6 @@ import org.nrg.framework.annotations.XnatPlugin;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-@XnatPlugin(value = "xnat-noregister", name = "XNAT Noregister", description = "Plugin that that over-rides the registration page with a custom link.")
+@XnatPlugin(value = "xnat-noregister", name = "XNAT No Register", description = "Plugin that over-rides the registration and forgot password pages with a custom link.")
 public class XnatNoRegister {
 }
