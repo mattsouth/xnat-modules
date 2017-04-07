@@ -1,11 +1,11 @@
-# XNAT Modules
+# XNAT Plugins
 
-XNAT customisation modules from the DPUK project.
+XNAT customisation plugins from the DPUK project.
 
 To use (on linux or macos):
  - clone this project: ``git clone https://github.com/mattsouth/xnat-modules``
  - ``cd xnat-modules``
- - build module: e.g. ``./gradlew jar`` will create the build/libs folder where you find the plugin jars
+ - build plugin: e.g. ``./gradlew jar`` will create the build/libs folder where you find the plugin jars
  - place the resulting jar files into your ``$XNAT_HOME/plugins`` folder and restart your tomcat application
 
 ## XNAT Ribbon
