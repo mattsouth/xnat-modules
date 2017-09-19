@@ -41,10 +41,12 @@ noRegisterRegistrationURL=http://wiki.xnat.org/signup.action
 noRegisterForgotPasswordURL=http://wiki.xnat.org/forgotuserpassword.action
 ```
 
-Note that before this plugin can be used, this issue must be fixed: https://issues.xnat.org/browse/XNAT-4819
-. Without this fix, the ForgotLogin page wont render properly.
+Note that before this plugin can be used as is, this issue must be fixed: https://issues.xnat.org/browse/XNAT-4819
+. Without this fix, the ForgotLogin page wont render properly.  To work around this issue (which is present in 1.7.3) then you can edit the ForgotLogin.vm file, hardcoding the ``$siteConfig.getProperty`` expressions.
 
 ## XNAT Upload-applet-fix
+
+** Obsoleted by 1.7.3 - but still maybe relevant for 1.7.0, 1.7.1, 1.7.2 ** 
 
 A module to update the UploadApplet template in light of recent tweaks to the
 applet rules in firefox, as per this discussion group thread:
