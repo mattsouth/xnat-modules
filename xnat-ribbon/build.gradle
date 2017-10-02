@@ -7,7 +7,7 @@
  * Released under the Simplified BSD.
  */
 
-def pluginVersion = '1.0.0'
+def pluginVersion = '1.1.0'
 
 group 'org.nrg.xnat'
 version pluginVersion
@@ -132,7 +132,7 @@ dependencies {
 
     compile "org.reflections:reflections:0.9.10"
     compile "javax.servlet:javax.servlet-api:3.1.0"
-	
+
 	compile "org.nrg:pipelineBase:1.0"
     compile "org.apache.xmlbeans:xmlbeans:2.6.0"
     compile "org.apache.xmlbeans:xmlbeans-xpath:2.6.0"
@@ -145,7 +145,7 @@ dependencies {
     }
 
 	compile "commons-lang:commons-lang:2.6"
-	
+
     compile "org.slf4j:slf4j-api:${vSlf4j}"
     compile "org.slf4j:slf4j-log4j12:${vSlf4j}"
     compile "org.slf4j:jul-to-slf4j:${vSlf4j}"
