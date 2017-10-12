@@ -28,7 +28,7 @@ If you change the config then you'll have to restart the application to see them
 
 ## XNAT Noregister
 
-This module overrides the user registration and forgotten password pages for when
+This module overrides the user registration and forgotten password links for when
 you've connected your XNAT instance to a read-only authentication source.
 
 The plugin assumes that your read-only authentication source has URLs for registration and forgotten password functionality and allows you to set those in the
@@ -41,12 +41,13 @@ noRegisterRegistrationURL=http://wiki.xnat.org/signup.action
 noRegisterForgotPasswordURL=http://wiki.xnat.org/forgotuserpassword.action
 ```
 
-Note that before this plugin can be used as is, this issue must be fixed: https://issues.xnat.org/browse/XNAT-4819
-. Without this fix, the ForgotLogin page wont render properly.  To work around this issue (which is present in 1.7.3) then you can edit the ForgotLogin.vm file, hardcoding the ``$siteConfig.getProperty`` expressions.
+The original design of this plugin is to override the user registration and
+forgotten password pages but the forgotten password page currently has an
+issue that blocks this approach:  https://issues.xnat.org/browse/XNAT-4819
 
 ## XNAT Upload-applet-fix
 
-** Obsoleted by 1.7.3 - but still maybe relevant for 1.7.0, 1.7.1, 1.7.2 ** 
+** Obsoleted by 1.7.3 - but still maybe relevant for 1.7.0, 1.7.1, 1.7.2 **
 
 A module to update the UploadApplet template in light of recent tweaks to the
 applet rules in firefox, as per this discussion group thread:
