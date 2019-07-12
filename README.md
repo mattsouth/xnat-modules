@@ -1,6 +1,6 @@
 # XNAT Plugins
 
-[XNAT](http://www.xnat.org) customisation plugins from the DPUK project.
+Generic [XNAT](http://www.xnat.org) customisation plugins from the DPUK project.
 
 To use (on linux or macos):
  - clone this project: ``git clone https://github.com/mattsouth/xnat-modules``
