@@ -5,6 +5,8 @@ XNAT customisation modules from the DPUK project.
 To use (on linux or macos):
  - clone this project: ``git clone https://github.com/mattsouth/xnat-modules``
  - ``cd xnat-modules``
+ - choose the plugin you wish to build
+ - ``cd xnat-ribbon``
  - build module: e.g. ``./gradlew jar`` will create the build/libs folder where you find the plugin jars
  - place the resulting jar files into your ``$XNAT_HOME/plugins`` folder and restart your tomcat application
 
@@ -41,21 +43,6 @@ noRegisterRegistrationURL=http://wiki.xnat.org/signup.action
 noRegisterForgotPasswordURL=http://wiki.xnat.org/forgotuserpassword.action
 ```
 
-Note that before this plugin can be used as is, this issue must be fixed: https://issues.xnat.org/browse/XNAT-4819
-. Without this fix, the ForgotLogin page wont render properly.  To work around this issue (which is present in 1.7.3) then you can edit the ForgotLogin.vm file, hardcoding the ``$siteConfig.getProperty`` expressions.
+### XNAT 1.7.3 and 1.7.4
 
-## XNAT Upload-applet-fix
-
-** Obsoleted by 1.7.3 - but still maybe relevant for 1.7.0, 1.7.1, 1.7.2 ** 
-
-A module to update the UploadApplet template in light of recent tweaks to the
-applet rules in firefox, as per this discussion group thread:
-[XNAT 1.7 problem uploading images JAVA plugin is not support](https://groups.google.com/forum/#!topic/xnat_discussion/JWEMwni55FM)
-
-### Before
-
-<img src="https://mattsouth.github.io/xnat-modules/screenshot3.png" width="600">
-
-### After
-
-<img src="https://mattsouth.github.io/xnat-modules/screenshot4.png" width="600">
+This issue: https://issues.xnat.org/browse/XNAT-4819 broke this plugin in 1.7.3 and 1.7.4 but is resolved in 1.7.5.
