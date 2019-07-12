@@ -42,7 +42,3 @@ noRegisterTitle=XNAT WIKI
 noRegisterRegistrationURL=http://wiki.xnat.org/signup.action
 noRegisterForgotPasswordURL=http://wiki.xnat.org/forgotuserpassword.action
 ```
-
-### XNAT 1.7.3 and 1.7.4
-
-This issue: https://issues.xnat.org/browse/XNAT-4819 broke this plugin in 1.7.3 and 1.7.4 but is resolved in 1.7.5.
